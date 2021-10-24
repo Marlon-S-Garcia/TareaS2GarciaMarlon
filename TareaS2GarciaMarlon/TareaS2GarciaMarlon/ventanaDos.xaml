@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaS2GarciaMarlon.ventanaDos">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuaio conectado: " Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="1"/>
+                
+                </Grid>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+
+
+                <Label Text="Ingrese la Nota de seguimiento 1:" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtDatoUno" Keyboard="Numeric" Grid.Row="0" Grid.Column="1" TextChanged="txtDatoUno_TextChanged"/>
+
+                <Label Text="Ingrese la Nota del examen 1:" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtDatoDos" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" TextChanged="txtDatoDos_TextChanged"/>
+
+                <Label Text="El Promedio Parcial 1 es:" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtResultado" Keyboard="Numeric" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+
+
+                <Label Text="Ingrese la Nota de seguimiento 2:" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtDatoUnoD" Keyboard="Numeric" Grid.Row="3" Grid.Column="1" TextChanged="txtDatoUnoD_TextChanged"/>
+
+                <Label Text="Ingrese la Nota del examen 2:" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="txtDatoDosD" Keyboard="Numeric" Grid.Row="4" Grid.Column="1" TextChanged="txtDatoDosD_TextChanged"/>
+
+                <Label Text="El Promedio Parcial 2 es:" Grid.Row="5" Grid.Column="0"/>
+                <Entry x:Name="txtResultadoD" Keyboard="Numeric" IsReadOnly="True" Grid.Row="5" Grid.Column="1"/>
+
+
+
+
+                <Label Text="Promedio Final:" Grid.Row="6" Grid.Column="0" />
+                <Entry x:Name="txtFinal" IsReadOnly="True" Grid.Row="6" Grid.Column="1"/>
+
+                <Label Text="Estado:" Grid.Row="7" Grid.Column="0"/>
+                <Entry x:Name="txtEstado" IsReadOnly="True" Grid.Row="7" Grid.Column="1"/>
+
+            </Grid>
+            <Button x:Name="btnSuma" Text="Promedio" Clicked="btnSuma_Clicked" />
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
